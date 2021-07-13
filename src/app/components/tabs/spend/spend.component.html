@@ -1,0 +1,42 @@
+<div class="config_tab_active" tab-control="pay">
+    <div id="payFor">
+        <h2>Витрати</h2>
+        <div id="payForMain">
+            <h2>У вартість входить</h2>
+            <div id="payForMain-container" class="payForInner-container">
+                <div class="payForBlock" *ngFor="let item of spendItems">
+                    <div class="newImg-container"></div>
+                    <div style="background-image: url(pic/icos/bus_black.svg)" block-id="33322" class="payForBlock-img"></div>
+                    <input class="filePayFor" hidden type="file" block-id="0">
+                    <span>Назва</span>
+                    <input class="payForInput" role="name" value="{{item.title}}">
+                    <span>Опис</span>
+                    <input class="payForInput" role="description" value="   ">
+                    <button (click)="delItem(item.id)" class="payForDelete" block-id="0">Видалити</button>
+                </div>
+            </div>
+        </div>
+        <div id="payForExtra"></div>
+        <div id="payForSave-container"></div>
+        <button (click)="addItem()" role="0" class="payForAdd">Додати</button>
+    </div>
+</div>
+<div class="payForExtra">
+    <h2>Додаткові витрати</h2>
+    <div id="payForExtra-container" class="payForInner-container">
+        <div class="payForBlock">
+            <div class="newImg-container"></div>
+            <div style="background-image: url()" block-id="33329" class="payForBlock-img"></div>
+            <input class="filePayFor" hidden type="file" block-id="7">
+            <span>Назва</span>
+            <input class="payForInput" role="name" value="Харчування;">
+            <span>Опис</span>
+            <input class="payForInput" role="description" value="   ">
+            <button class="payForDelete" block-id="7">Видалити</button>
+        </div>
+        <button role="0" class="payForAdd">Додати</button>
+    </div>
+    <div class="payForSave-container">
+        <button id="payForSave">Зберегти</button>
+    </div>
+</div>

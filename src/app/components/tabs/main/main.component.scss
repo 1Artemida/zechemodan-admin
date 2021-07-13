@@ -1,0 +1,187 @@
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.config_title {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.config {
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.config p {
+    font-weight: 500;
+    color: #292929;
+    text-align: right;
+}
+
+.config input {
+    width: 80%;
+    padding: 5px;
+    height: 20px;
+    border-color: #38976d;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 5px 3px 4px 1px rgba(23, 118, 76, 0.3);
+    height: 20px;
+    outline: none;
+}
+
+.config_entity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.config_entity p {
+    margin-right: 84px;
+}
+
+.config button[name="tour_pic_button"],
+#hotelPic,
+button[hotel-role="hotelGallery"],
+.galleryPreview {
+    background-image: url();
+    border: 1px dashed black;
+    height: 35px;
+    width: 35px;
+    margin: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+select[name="tour_cities"] {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#visibility_input {
+    width: 20px;
+    height: 20px;
+}
+
+.config_entity:not(:first-child) {
+    margin-left: 50px;
+}
+
+.config textarea[name="tour_desc"] {
+    width: 80%;
+    height: 100px;
+}
+
+.config input,
+.config textarea {
+    border: 1px solid #949494;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+#deleteGal,
+.payForDelete,
+#busDelete {
+    padding: 0;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: white;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #D74C4C;
+    margin-left: 20px;
+}
+
+.config_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.config.row input:nth-child(2) {
+    width: 20%;
+}
+
+.config_row input {
+    margin-right: 20px;
+    margin-left: 15px;
+    padding: 5px;
+    height: 20px;
+    border-color: #38976d;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 5px 3px 4px 1px rgba(23, 118, 76, 0.3);
+    height: 20px;
+    outline: none;
+}
+
+#save,
+.exitButton {
+    width: 200px;
+    height: 50px;
+    background-color: #38976d;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.exitForm {
+    text-align: right;
+}
+
+.exitButton {
+    background-color: #D74C4C;
+}

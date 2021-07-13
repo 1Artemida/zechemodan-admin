@@ -1,0 +1,60 @@
+<div class="container">
+    <h2 class="config_title">Інформація про тур!</h2>
+    <div class="config">
+        <p>Назва туру</p>
+        <input type="text" name="input_name_tour" id="name_tour">
+    </div>
+    <div class="config">
+        <div class="config_entity">
+            <p>Хедер</p>
+            <button getpic="main" id="main_pic" style="background-image: url()" name="tour_pic_button"></button>
+        </div>
+        <div class="config_entity">
+            <p>Міста</p>
+            <select name="tour_cities" multiple>
+            <option value="Rivne">Рівне</option>
+            <option value="Lutsk">Луцьк</option>
+            <option value="Harkiv">Харків</option>
+        </select>
+        </div>
+        <div class="config_entity">
+            <span>Паспорт в реєстрації?</span>
+            <input type="checkbox" id="visibility_input" name="tour_passport" value="1">
+        </div>
+        <div class="config_entity">
+            <span>Видимість на сайті?</span>
+            <input type="checkbox" id="visibility_input" name="tour_visibility" value="1">
+        </div>
+    </div>
+    <div class="config">
+        <p>Опис</p>
+        <textarea name="tour_desc">Друже, в нас є для тебе дещо особливе.  Подорож, яка одночасно викликає нестримний інтерес та мороз по шкірі. І не дарма, адже ми кличемо тебе до Чорнобиля.Це місто, завжди приваблювало туристів з усього світу своєю містичністю та важкою історією.
+    <br /> ЗА УМОВ ЗОНИ ВІДЧУЖЕННЯ, В`ЇЗД ДОЗВОЛЯЄТЬСЯ ЛИШЕ З 18 РОКІВ.
+    <br /> БРОНЮВАННЯ В ТУР ЗАКРИВАЄТЬСЯ ЗА П`ЯТЬ ДНІВ ДО ВИЇЗДУ.
+</textarea>
+    </div>
+    <div class="config">
+        <p>4 картинки</p>
+        <button getpic="0" role="gal" name="tour_pic_button" style="background-image: url();"></button>
+        <button getpic="1" role="gal" name="tour_pic_button" style="background-image: url();"></button>
+        <button getpic="2" role="gal" name="tour_pic_button" style="background-image: url();"></button>
+        <button getpic="3" role="gal" name="tour_pic_button" style="background-image: url();"></button>
+        <input getpic="0" hidden type="file" name="tour_gallery" db-id="29">
+        <input getpic="1" hidden type="file" name="tour_gallery" db-id="30">
+        <input getpic="2" hidden type="file" name="tour_gallery" db-id="31">
+        <input getpic="3" hidden type="file" name="tour_gallery" db-id="32">
+        <button id="deleteGal">Видалити галерею</button>
+    </div>
+    <div class="config_row">
+        <p>Дата виїзду</p>
+        <input type="text" name="tour_date" value="12/09/2021">
+        <p class="p_margin">Всього місць</p>
+        <input type="text" name="tour_place" value="14">
+        <p class="p_margin">Вартість поїздки</p>
+        <input type="text" name="tour_price " value="1799грн.">
+    </div>
+    <button id="save">Зберегти зміни</button>
+    <form class="exitForm" action="config/logout.php">
+        <button class="exitButton" type="submit">Вийти</button>
+    </form>
+</div>
